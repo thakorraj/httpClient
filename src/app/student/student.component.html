@@ -1,0 +1,22 @@
+<mat-accordion *ngFor="let student of products">
+  <!-- <p>{{student.id}}</p> -->
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{student.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+       {{student.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </mat-expansion-panel>
+</mat-accordion>
